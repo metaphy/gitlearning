@@ -18,7 +18,7 @@ sudo mysql -v
 List DBs:
     show databases;
     select * from table limit 10;
-load sql: 
+load sql:
     sudo mysql -u root -p yuweishi < /home/peter/workspace2/yuweishi.sql
     Password for root@local db: Xing....
 MySQL Server Port:
@@ -34,14 +34,15 @@ Create new user and use it instead of Root:
 application/config/config.php
 application/config/database.php
 
+CREATE DATABASE yuweishi CHARACTER SET utf8 COLLATE utf8_general_ci;
+-----------------------------------------------------------------------------
 
--------------------------------------------------------------------------------------------------------
 1. 网站运行的PHP/MySQL 版本分别是什么？
 PHP 7.1     mysql5.6
 
-2. 最新的代码是这个吗 -- 0429-full? 
+2. 最新的代码是这个吗 -- 0429-full?
  是的
-网站上有没有比0429-full更新的code? 
+网站上有没有比0429-full更新的code?
  ftp可以自己下载
 
 
@@ -54,4 +55,10 @@ index.php	- 首页入口文件
 
 admin.php	- 后台入口文件
 /var/www/html/application/controllers/index.php
-   
+
+
+ywsw780593-AA$$$
+
+-----------------------------------------------------------------------------
+mysql -u root -p yuweishi < /tmp/yuweishi.sql
+
